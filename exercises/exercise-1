@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Emma Files</title>
+    <style type="text/css">
+        body{
+        
+            background-color: rgb(99, 68, 117);
+            font-family:monospace 
+        }
+        div{
+            background-color:rgb(250, 202, 80);
+            width: 600px;
+            padding: 20px;   
+            border-style: solid; /*All borders need a style*/
+            border-width: 4px;
+            margin: 20px;
+            float: left;
+        }
+        img{
+
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        }
+
+        div1{
+
+            background-color:rgb(250, 202, 80);
+            width: 600px;
+            padding: 20px; 
+            float: right;
+            position: relative;
+            right: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1> Emma Daron</h1>
+
+        <p> Hi, my name is Emma/Emmet! Welcome to my page, here's a little information about me!
+        <h1></h1>
+        <b>The basics:</b> 
+        <li> Age: 22</li>
+        <li> Born: Guatemala</li>
+        <li> Raised: America (adopted)</li>
+        <li> Cursed with: an idiotic older brother</li>
+        <li> Other stuff: Genderfluid and Pansexual, hence the second name  of Emmet</li>
+        <h1></h1>
+        <b>Likes:</b>
+        <li> Rain</li>
+        <li> Baking</li>
+        <li> Drawing</li>
+        <li> Video games</li>
+        <li> Listening to music</li>
+        <li> The overabundance of cats in my house</li>
+        <li> Specifically the Christopher Nolan movie Interstellar</li>
+        <li> Analog horrors, despite how embarrassingly easy I get scared</li>
+        <li> Any activity you would imagine a grandma doing (crocheting, sewing, etc.)</li>
+        <li> A whole lot more that I can't remember as of right now</li>
+        <h1></h1>
+        <b>Dislikes:</b> 
+        <li> Drama</li>
+        <li> Wasps</li>
+        <li> People that are just <b><i>rude</i></b></li>
+        <li> When my hair is destroyed by humidity</li>
+        <li> Any spider that isn't a jumping spider</li>
+        <li> Honestly, I don't really dislike a lot of stuff. I like to think that I have a pretty open mind</li>
+        </p>
+        <h1></h1>
+        <img src="Illustration79.png">
+    
+    </div>
+    <h1></h1>
+    <div id="div1">
+        <b> A Little About my Art</b>
+        <h1></h1>
+        The first thing I knew how to do when coming into this program was illustrate. I've been illustrating ever since
+        I was able to hold a pencil, inspired by the little doodles of people my father had made, wanting to be just like him. I seriously
+        started getting into it in middle school, teaching myself everything I know now. Since then, I've developed a good style for myself. 
+        The majority of my art is done in a cartoony style, but lately I've been challenging myself to do more than just that. I've been able 
+        to learn a lot about my art and myself in these classes.
+        <h1></h1>
+        <b> Why Graphic Design?</b>
+       <h1></h1>
+        Originally, I had wanted to be an art teacher, but designing my boyfriend's food truck had sparked my 
+        growing passion for graphic design. After a major change, this program helped me see that this is exactly 
+        where I need to be. Though I aspired to be strictly an illustrator at first, this program allowed me to 
+        challenge myself, and I was able to see I can do so much more than just create illustrations. I never thought
+        I'd be able to make things like calendars, books, or even really bad horror short films. I can see myself having
+        a career in this field. I wish I figured this out BEFORE being one semester away from graduating, but 
+        I wouldn't have the friends I made.
+        <h1></h1>
+        <b>What's the Plan After Graduation?</b>
+        <h1></h1>
+        Before ANYTHING, I've been going to school for the last 16 years of my life. I'm taking a little bit of time to 
+        catch up on all of the sleep I had lost as a graduation present for myself. After that, I really wish to do freelance 
+        design one day. But before that, I'm aware of how it could be difficult to make it if you dive right into freelance, 
+        so I plan to get a job somewhere to get experience, and my foot in the door of the graphic designer world. As much as I don't
+        want to work for the man, I'll have to if I want to start making a name for myself. It's nice to see familiar faces in this class again!
+        <h1></h1>
+        <img src="Illustration82.png">
+
+    </div>
+</body>
+</html>
