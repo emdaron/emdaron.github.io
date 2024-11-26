@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="graphic design, web design, portfolio, html, css">
+    <meta name="description" content="Portfolio for Claire Williams showcasing my graphic design work">
+
+    <title>Exercise 6</title>
+    <style>
+        body {
+            background-color: #f3e2ff;
+            font-family:monospace;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            }
+
+        header {
+            background-color: #4b2269;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            }
+
+        nav a:hover {
+            text-decoration: underline;
+            }
+
+        footer{
+            background-color: #4b2269;
+            color: white;
+            padding: 10px;
+
+        }
+
+        footer a{
+            color: white;
+        }
+
+
+@media (max-width: 600px) { 
+    nav ul { flex-direction: column; } 
+
+    img{
+        width: 100%;
+    }}
+        @media (max-width: 600px){
+            nav ul { flex-direction: column; } 
+            img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>⭐ Emma Daron ⭐</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>ABOUT ME</h2>
+                <p>Hi there, my name is Emma/Emmet Daron. I am a Graphic and 
+                Interactive Design major at Harrisburg Area Community College.</p>
+        </section>
+
+        <section id="skills">
+            <h2>SKILLS</h2>
+                <ul>
+                     <li>Procreate</li>
+                     <li>Clip Studio Paint</li>
+                     <li>Adobe Illustrator</li>
+                     <li>Adobe Photoshop</li>
+                     <li>Figma</li>
+                     <li>Entry level HTML/CSS</li>
+
+                 </ul>
+        </section>
+
+        <section id="projects">
+             <h2>PROJECTS</h2>
+                <article>
+                    <h3>Project 1</h3>
+                        <img src="https://placehold.co/600x400/gray/white" alt="Project 1 - this is an html assignment on Central PA">
+                     <p>My first project is a website on how to make a freindship bracelet. This project taught me how to make a website with multiple
+                        pages, all while being able to make a design that is pleasing to the eye, and with easy to understand instructions.
+                     </p>
+                </article>
+                        
+                <article>
+                    <h3>Project 2</h3>
+                         <img src="https://placehold.co/600x400/gray/white" alt="Screenshot of Project 2">
+                        <p>My second project is a magazine cover for my Graphic Design 2 class. The artowrk was heavily inspired by the vaporwave
+                            aesthetic, while I also challenged myself regarding my typical art style.
+                        </p>
+                </article>
+
+                 </section>
+    </main>
+
+     <footer>
+            <p>Contact: <a href="em.daron01@gmail.com">My Email</a></p>
+
+            <p>See more of my art on: <a href="https://www.instagram.com/_.fridaverse._/">Instagram</a></p>
+            <p>Look at my portfolio!!!: <a href="https://emdaron01.wixsite.com/daron-studios">Portfolio</a></p>
+     </footer>
+</body>
+</html>
