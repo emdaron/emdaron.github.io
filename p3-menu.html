@@ -3,212 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Story</title>
+    <title>Menu</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
     <style>
-        body {
-            background-color: rgb(18, 12, 7);
-            margin: 0;
-            padding: 0;
-            font-family: monospace;
-        }
+body {
+    background-color: rgb(18, 12, 7);
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
 
-        .container {
-            width: 100%;
-            max-width: 1440px;
-            margin-top: 17px;
-            background-image: linear-gradient(#3d3d3d, rgb(19, 19, 19));
-            display: flex;
-            flex-direction: column; /* Default column for the whole page */
-            justify-content: flex-start;
-            align-items: center;
-            border: solid;
-            border-width: 6px;
-            border-color: rgb(0, 0, 0);
-            margin: 0 auto;
-            padding-bottom: 30px;
-        }
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-top: 17px;
+    background-image: linear-gradient(#3d3d3d, rgb(19, 19, 19));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    border-width: 6px;
+    border-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    padding-bottom: 30px; 
+}
 
-        #navbar {
-            display: flex;
-            background-color: black;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 200px;
-            padding: 0;
-            box-sizing: border-box;
-        }
+#navbar {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        #heading {
-            font-weight: bold;
-            font-size: 50px;
-            color: #D6A232;
-            text-align: center;
-            margin-top: 120px;
-        }
+#heading {
+    font-weight: bold;
+    font-size: 50px;
+    color: #FFE3A7;
+    text-align: center;
+    margin-top: 70px;
+}
 
-        #navbar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
-        #navbar li {
-            margin: 0 20px;
-        }
+#navbar li {
+    margin: 0 20px;
+}
 
-        #navbar a {
-            text-decoration: none;
-            color: #D6A232;
-            font-weight: bold;
-            font-size: 30px;
-        }
+#navbar a {
+    text-decoration: none;
+    color: #D6A232;
+    font-weight: bold;
+    font-size: 30px;
+}
 
-        #navbar a.active {
-            text-decoration: underline;
-            text-underline-offset: 5px;
-            color: #FFE3A7;
-        }
+#navbar a.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #FFE3A7;
+}
 
-        #navbar ul li a:hover {
-            background-color: rgb(102, 74, 5);
-        }
+#navbar ul li a:hover {
+    background-color: rgb(102, 74, 5);
+}
 
-        .image, .gracing {
-            display: flex;
-            flex-direction: row; /* Default to row for large screens */
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin-top: 30px;
-        }
+.image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
 
-        .image img, .gracing img {
-            width: 378px;
-            height: 419px;
-            margin-right: 20px; /* Add space between image and text */
-            object-fit: cover;
-        }
+.image img {
+    width: 378px;
+    height: 419px;
+    margin-left: 20px;
+    object-fit: cover;
+}
 
-        #text, #gracingtext {
-            width: 100%;
-            max-width: 650px;
-            padding: 30px;
-            color: #FFE3A7;
-            text-align: center;
-        }
+#text {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    color: #FFE3A7;
+    text-align: center;
+}
 
-        #text p, #gracingtext p {
-            margin: 10px 0;
-            font-size: 20px;
-            max-width: 671px;
-            word-wrap: break-word;
-            text-align: center;
-        }
+#text p {
+    margin: 10px 0;
+    font-size: 20px;
+    max-width: 671px;
+    word-wrap: break-word;
+    text-align: left; 
+    margin-bottom: 30px;
+    align-items: center;
+    color: #FFE3A7;
+    font-size: 20px;
+    max-width: 650px;
+    text-align: center;
+}
 
-        #separator {
-            width: 100%;
-            max-width: 800px;
-            padding: 30px;
-            color: #D6A232;
-            text-align: center;
-            font-size: 300%;
-        }
+#food-photos{
+    margin: 10px 0;
+    font-size: 20px;
+    max-width: 671px;
+    word-wrap: break-word;
+    text-align: left; 
+    margin-bottom: 350px;
+    align-items: center;
+    color: #FFE3A7;
+    font-size: 20px;
+    max-width: 650px;
+    text-align: center;
+}
 
-        /* Media Queries for smaller screens */
+#separator {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    color: #D6A232;
+    text-align: center;
+    font-size: 190%;
+}
 
-        @media (max-width: 1024px) {
-            .image, .gracing {
-                flex-direction: column; /* Stack in column for medium screens */
-            }
+@media (max-width: 1024px) {
+    #heading {
+        font-size: 40px;
+    }
 
-            #heading {
-                font-size: 40px;
-            }
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-            #navbar ul {
-                flex-direction: column;
-                align-items: center;
-            }
+    .image img {
+        width: 320px;
+        height: 360px;
+    }
 
-            .image img, .gracing img {
-                width: 320px;
-                height: 360px;
-                margin-bottom: 20px; /* Add margin at the bottom for spacing */
-            }
+    #text {
+        padding: 20px;
+        text-align: center; 
+    }
 
-            #text, #gracingtext {
-                padding: 20px;
-                font-size: 18px;
-                text-align: center;
-            }
+    #food-photos img {
+        width: 100%;
+        max-width: 400px;
+    }
 
-            #gracingtext {
-                padding: 30px;
-            }
-        }
+    #text p {
+        text-align: center; 
+    }
+}
 
-        @media (max-width: 768px) {
-            .image, .gracing {
-                flex-direction: column; /* Stack in column for small screens */
-            }
+@media (max-width: 768px) {
+    #heading {
+        font-size: 30px;
+    }
 
-            #heading {
-                font-size: 30px;
-            }
+    .image img {
+        width: 280px;
+        height: 320px;
+    }
 
-            .image img, .gracing img {
-                width: 280px;
-                height: 320px;
-            }
+    #text {
+        font-size: 18px;
+        padding: 15px;
+        text-align: center; 
+    }
 
-            #text, #gracingtext {
-                font-size: 18px;
-                padding: 15px;
-                text-align: center;
-            }
+    #food-photos img {
+        width: 100%;
+        max-width: 350px;
+    }
 
-            #gracingtext {
-                padding: 20px;
-            }
-        }
+    #text p {
+        text-align: center; 
+    }
+}
 
-        @media (max-width: 480px) {
-            .image, .gracing {
-                flex-direction: column; /* Stack in column for extra small screens */
-            }
+@media (max-width: 480px) {
+    #heading {
+        font-size: 24px;
+    }
 
-            #heading {
-                font-size: 24px;
-            }
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
 
-            #navbar ul {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 0;
-            }
+    .image img {
+        width: 250px;
+        height: 280px;
+    }
 
-            .image img, .gracing img {
-                width: 250px;
-                height: 280px;
-            }
+    #text {
+        font-size: 16px;
+        padding: 10px;
+        max-width: 90%;
+        text-align: center; 
+    }
 
-            #text, #gracingtext {
-                font-size: 16px;
-                padding: 10px;
-                max-width: 90%;
-                text-align: center;
-            }
+    #food-photos img {
+        width: 100%;
+        max-width: 300px;
+    }
 
-            #gracingtext {
-                padding: 15px;
-            }
-        }
+    #text p {
+        text-align: center; 
+    }
+}
+
+
     </style>
 </head>
 
@@ -220,30 +238,29 @@
         <div id="navbar">
             <ul>
                 <li><a href="p3-home.html">Home</a></li>
-                <li><a href="p3-ourstory.html" class="active">Our Story</a></li>
-                <li><a href="p3-menu.html">Menu</a></li>
+                <li><a href="p3-ourstory.html">Our Story</a></li>
+                <li><a href="p3-menu.html" class="active">Menu</a></li>
                 <li><a href="p3-events.html">Events</a></li>
                 <li><a href="p3-contact.html">Contact</a></li>
             </ul>
         </div>
+        <div id="heading">MENU</div>
 
-        <div class="image">
-            <img src="Illustration165.png">
-            <div id="text">
-                <h1>OUR STORY</h1>
-                <p>Palin is a graduate of the Culinary Program at Carlisle High school, and a graduate of the Penn College Culinary school, while also interning at Eagles Mere Country Club. He currently works at Momma Spriggs in Carlisle, PA.</p>
-                <p>Amy bakes at local fairs and competitions, starting in 2013. She has won First Place and Best of Show ribbons at local and county fairs, her biggest achievement currently being the Best of Show at the 2023 PA Farm Show.</p>
-            </div>
+        <div id="text">
+            <p><h2>Here are a few of our most popular menu items!</h2></p>
         </div>
 
-        <div id="separator"> <p>⁺₊⋆ ☀︎ ⋆⁺₊⁺₊⋆ ☀︎ ⋆⁺₊⁺₊⋆</p></div>
+        <div id="food-photos">
+            <img src="Illustration166.png">
+            <div id="bsandwich"><p><h3>Grilled Sourdough Breakfast Sandwich:</h3> Eggs, bacon, and American cheese on homemade jalapeno cheddar sourdough.</p></div>
+       
+            <div id="separator"> <p>⁺₊⋆ ☀︎ ⋆⁺₊⁺₊⋆ ☀︎ ⋆⁺₊⁺₊⋆</p></div>
 
-        <div class="gracing">
-            <img src="Illustration165 2.png">
-            <div id="gracingtext">
-                <p>Unless we are attending an event, we are most commonly seen at G's RC Raceway, in Shippensburg. They have been a huge help throughout this entire journey.</p>
-                <p>With the help of GSRC, we have been able to consistently have business, without them, none of this would have been possible, and Brunch'n Yum thanks you at the bottom of our hearts.</p>
-            </div>
+            <img src="Illustration166 2.png">
+            <div id="burrito"><p><h3>Breakfast Burrito:</h3> Sausage, egg, and American cheese in a flour tortilla.</p></div>
+            <div id="separator"> <p>⁺₊⋆ ☀︎ ⋆⁺₊⁺₊⋆ ☀︎ ⋆⁺₊⁺₊⋆</p></div>
+            <img src="Illustration166 3.png">
+            <div id="cheesesteak"><p><h3>Chicken Cheesesteak Sandwich:</h3> Grilled peppers & onions, diced chicken, and yellow American cheese on a toasted roll.</p></div>
         </div>
     </div>
 </body>
