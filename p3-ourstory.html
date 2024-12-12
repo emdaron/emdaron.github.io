@@ -20,7 +20,7 @@
             margin-top: 17px;
             background-image: linear-gradient(#3d3d3d, rgb(19, 19, 19));
             display: flex;
-            flex-direction: column;
+            flex-direction: column; /* Default column for the whole page */
             justify-content: flex-start;
             align-items: center;
             border: solid;
@@ -79,36 +79,36 @@
             background-color: rgb(102, 74, 5);
         }
 
-        .image {
+        .image, .gracing {
             display: flex;
-            flex-direction: column; 
+            flex-direction: row; /* Default to row for large screens */
             justify-content: center;
             align-items: center;
             width: 100%;
             margin-top: 30px;
         }
 
-        .image img {
+        .image img, .gracing img {
             width: 378px;
             height: 419px;
-            margin-bottom: 20px;
+            margin-right: 20px; /* Add space between image and text */
             object-fit: cover;
         }
 
-        #text {
+        #text, #gracingtext {
             width: 100%;
             max-width: 650px;
             padding: 30px;
-            color: #D6A232;
-            text-align: center; 
+            color: #FFE3A7;
+            text-align: center;
         }
 
-        #text p {
+        #text p, #gracingtext p {
             margin: 10px 0;
             font-size: 20px;
             max-width: 671px;
             word-wrap: break-word;
-            text-align: center; 
+            text-align: center;
         }
 
         #separator {
@@ -120,126 +120,95 @@
             font-size: 300%;
         }
 
-        .gracing {
-            display: flex;
-            flex-direction: column; 
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin-top: 30px;
-        }
+        /* Media Queries for smaller screens */
 
-        .gracing img {
-            width: 378px;
-            height: 419px;
-            margin-bottom: 20px;
-            object-fit: cover;
-        }
-
-        #gracingtext {
-           width: 100%;
-        max-width: 650px;
-         height: auto;
-        padding: 30px;
-        color: #D6A232;
-        font-size: 20px; 
-        text-align: center;
-        }
         @media (max-width: 1024px) {
-    #heading {
-        font-size: 40px;
-    }
+            .image, .gracing {
+                flex-direction: column; /* Stack in column for medium screens */
+            }
 
-    #navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
+            #heading {
+                font-size: 40px;
+            }
 
-    .image img {
-        width: 320px;
-        height: 360px;
-    }
+            #navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    #text {
-        padding: 20px;
-        font-size: 18px;
-        text-align: center;
-    }
+            .image img, .gracing img {
+                width: 320px;
+                height: 360px;
+                margin-bottom: 20px; /* Add margin at the bottom for spacing */
+            }
 
-    .gracing img {
-        width: 300px;
-        height: 340px;
-    }
+            #text, #gracingtext {
+                padding: 20px;
+                font-size: 18px;
+                text-align: center;
+            }
 
-    #gracingtext {
-        font-size: 20px; 
-        padding: 180px;
-        text-align: center;
-    }
-}
+            #gracingtext {
+                padding: 30px;
+            }
+        }
 
-@media (max-width: 768px) {
-    #heading {
-        font-size: 30px;
-    }
+        @media (max-width: 768px) {
+            .image, .gracing {
+                flex-direction: column; /* Stack in column for small screens */
+            }
 
-    .image img {
-        width: 280px;
-        height: 320px;
-    }
+            #heading {
+                font-size: 30px;
+            }
 
-    #text {
-        font-size: 18px;
-        padding: 15px;
-        text-align: center;
-    }
+            .image img, .gracing img {
+                width: 280px;
+                height: 320px;
+            }
 
-    .gracing img {
-        width: 250px;
-        height: 280px;
-    }
+            #text, #gracingtext {
+                font-size: 18px;
+                padding: 15px;
+                text-align: center;
+            }
 
-    #gracingtext {
-        font-size: 18px; 
-        padding: 15px;
-        text-align: center;
-    }
-}
+            #gracingtext {
+                padding: 20px;
+            }
+        }
 
-@media (max-width: 480px) {
-    #heading {
-        font-size: 24px;
-    }
+        @media (max-width: 480px) {
+            .image, .gracing {
+                flex-direction: column; /* Stack in column for extra small screens */
+            }
 
-    #navbar ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-    }
+            #heading {
+                font-size: 24px;
+            }
 
-    .image img {
-        width: 250px;
-        height: 280px;
-    }
+            #navbar ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 0;
+            }
 
-    #text {
-        font-size: 16px;
-        padding: 10px;
-        max-width: 90%;
-        text-align: center;
-    }
+            .image img, .gracing img {
+                width: 250px;
+                height: 280px;
+            }
 
-    .gracing img {
-        width: 220px;
-        height: 250px;
-    }
+            #text, #gracingtext {
+                font-size: 16px;
+                padding: 10px;
+                max-width: 90%;
+                text-align: center;
+            }
 
-    #gracingtext {
-        font-size: 16px; 
-        padding: 10px;
-        text-align: center;
-    }
-}
+            #gracingtext {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 
@@ -257,11 +226,11 @@
                 <li><a href="p3-contact.html">Contact</a></li>
             </ul>
         </div>
-        <div id="heading">OUR STORY</div>
 
         <div class="image">
             <img src="Illustration165.png">
             <div id="text">
+                <h1>OUR STORY</h1>
                 <p>Palin is a graduate of the Culinary Program at Carlisle High school, and a graduate of the Penn College Culinary school, while also interning at Eagles Mere Country Club. He currently works at Momma Spriggs in Carlisle, PA.</p>
                 <p>Amy bakes at local fairs and competitions, starting in 2013. She has won First Place and Best of Show ribbons at local and county fairs, her biggest achievement currently being the Best of Show at the 2023 PA Farm Show.</p>
             </div>
