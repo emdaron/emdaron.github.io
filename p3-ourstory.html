@@ -41,14 +41,6 @@
             box-sizing: border-box;
         }
 
-        #heading {
-            font-weight: bold;
-            font-size: 50px;
-            color: #D6A232;
-            text-align: center;
-            margin-top: 120px;
-        }
-
         #navbar ul {
             list-style: none;
             padding: 0;
@@ -82,10 +74,11 @@
         .image, .gracing {
             display: flex;
             flex-direction: row; /* Default to row for large screens */
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /* Center content horizontally */
+            align-items: flex-start; /* Align items to the top to avoid extra space */
             width: 100%;
             margin-top: 30px;
+            margin-bottom: 0; /* Avoid extra margin at the bottom */
         }
 
         .image img, .gracing img {
@@ -93,6 +86,15 @@
             height: 419px;
             margin-right: 20px; /* Add space between image and text */
             object-fit: cover;
+            margin-bottom: 0; /* Remove any bottom margin */
+        }
+
+        #heading {
+            font-weight: bold;
+            font-size: 50px;
+            color: #FFE3A7;
+            text-align: left; /* Default left alignment for larger screens */
+            margin-top: 0; /* Remove any top margin */
         }
 
         #text, #gracingtext {
@@ -100,7 +102,7 @@
             max-width: 650px;
             padding: 30px;
             color: #FFE3A7;
-            text-align: center;
+            text-align: left; /* Default alignment for larger screens */
         }
 
         #text p, #gracingtext p {
@@ -108,7 +110,7 @@
             font-size: 20px;
             max-width: 671px;
             word-wrap: break-word;
-            text-align: center;
+            text-align: left; /* Default alignment for paragraphs on large screens */
         }
 
         #separator {
@@ -125,10 +127,13 @@
         @media (max-width: 1024px) {
             .image, .gracing {
                 flex-direction: column; /* Stack in column for medium screens */
+                justify-content: center; /* Center images and text */
+                align-items: center; /* Align items to center */
             }
 
             #heading {
                 font-size: 40px;
+                text-align: center; /* Center text for medium screens */
             }
 
             #navbar ul {
@@ -145,21 +150,24 @@
             #text, #gracingtext {
                 padding: 20px;
                 font-size: 18px;
-                text-align: center;
+                text-align: center; /* Center text on medium screens */
             }
 
-            #gracingtext {
-                padding: 30px;
+            #text p, #gracingtext p {
+                text-align: center; /* Center paragraphs on medium screens */
             }
         }
 
         @media (max-width: 768px) {
             .image, .gracing {
                 flex-direction: column; /* Stack in column for small screens */
+                justify-content: center; /* Center images and text */
+                align-items: center; /* Align items to center */
             }
 
             #heading {
                 font-size: 30px;
+                text-align: center; /* Center text on small screens */
             }
 
             .image img, .gracing img {
@@ -170,21 +178,24 @@
             #text, #gracingtext {
                 font-size: 18px;
                 padding: 15px;
-                text-align: center;
+                text-align: center; /* Center text on small screens */
             }
 
-            #gracingtext {
-                padding: 20px;
+            #text p, #gracingtext p {
+                text-align: center; /* Center paragraphs on small screens */
             }
         }
 
         @media (max-width: 480px) {
             .image, .gracing {
                 flex-direction: column; /* Stack in column for extra small screens */
+                justify-content: center; /* Center images and text */
+                align-items: center; /* Align items to center */
             }
 
             #heading {
                 font-size: 24px;
+                text-align: center; /* Center text on extra small screens */
             }
 
             #navbar ul {
@@ -202,11 +213,11 @@
                 font-size: 16px;
                 padding: 10px;
                 max-width: 90%;
-                text-align: center;
+                text-align: center; /* Center text on extra small screens */
             }
 
-            #gracingtext {
-                padding: 15px;
+            #text p, #gracingtext p {
+                text-align: center; /* Center paragraphs on extra small screens */
             }
         }
     </style>
@@ -230,7 +241,7 @@
         <div class="image">
             <img src="Illustration165.png">
             <div id="text">
-                <h1>OUR STORY</h1>
+                <div id="heading">OUR STORY</div>
                 <p>Palin is a graduate of the Culinary Program at Carlisle High school, and a graduate of the Penn College Culinary school, while also interning at Eagles Mere Country Club. He currently works at Momma Spriggs in Carlisle, PA.</p>
                 <p>Amy bakes at local fairs and competitions, starting in 2013. She has won First Place and Best of Show ribbons at local and county fairs, her biggest achievement currently being the Best of Show at the 2023 PA Farm Show.</p>
             </div>
