@@ -11,21 +11,27 @@
             const image = document.getElementById('image');
             const caption = document.getElementById('caption');
             const body = document.body;
+            const whiteScreen = document.getElementById('whiteScreen');
 
             image.style.visibility = 'visible';
             image.style.opacity = '1';
             caption.style.visibility = 'visible';
             caption.style.opacity = '1';
 
-            body.style.transition = 'none';  
-            body.style.backgroundColor = 'white'; 
+            whiteScreen.style.visibility = 'visible';
+            whiteScreen.style.opacity = '1';
 
             const soundEffect = document.getElementById('the funny noise');
             soundEffect.play();
 
             setTimeout(() => {
-                body.style.transition = 'background-color 0.2s ease'; 
-                body.style.backgroundColor = 'black'; 
+                whiteScreen.style.transition = 'opacity 0.2s ease'; 
+                whiteScreen.style.opacity = '0'; 
+
+                setTimeout(() => {
+                    image.style.transition = 'none'; 
+                    caption.style.transition = 'none'; 
+                }, 200); 
             }, 10); 
         }
     </script>
@@ -38,12 +44,13 @@
             align-items: center;    
             height: 100vh;           
             margin: 0;              
-            transition: background-color 0.2s ease; /* Transition for the fade to black */
+            overflow: hidden;
+            transition: background-color 0.2s ease; 
         }
 
         .maincontainer {
             width: 700px;
-            height: 650px;
+            height: 600px;
             padding: 50px;
             background-image: linear-gradient(#3d3d3d, rgb(10, 5, 2));
             border: solid;
@@ -59,7 +66,7 @@
         #image, #caption {
             visibility: hidden;  
             opacity: 0;          
-            transition: none; /* No transition, show instantly */
+            transition: none; 
         }
 
         #image {
@@ -87,16 +94,30 @@
             font-size: 30px;
             font-family: monospace;
         }
+
+        #whiteScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            visibility: hidden;  
+            opacity: 0;
+            transition: opacity 0.01s ease;
+            z-index: 9999; 
     </style>
 </head>
 <body>
+    <div id="whiteScreen"></div> 
+
     <div class="maincontainer">
         Once you press this button, something very terrifying will show up. Click if you dare.
         <button onclick="showImageAndChangeBackground()">Jumpscare Incoming.</button>
 
         <div id="imageContainer">
             <img id="image" src="goomba 2.png" alt="goomba">
-            <p id="caption">How evil do you think I am? Have a Goomba, it's my running gag at this point. And enjoy the flash bang, I had it in my basement and needed something to do with it.</p>
+            <p id="caption">How evil do you think I am? Have a Goomba, it's my running gag at this point. And enjoy the flash bang !!!</p>
         </div>
         <audio id="the funny noise" src="jixaw-metal-pipe-falling-sound.mp3"></audio>
     </div>
