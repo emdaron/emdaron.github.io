@@ -11,22 +11,23 @@
             const image = document.getElementById('image');
             const caption = document.getElementById('caption');
             const body = document.body;
-            const whiteScreen = document.getElementById('whiteScreen');
+            const evilScreen = document.getElementById('evilScreen');
+
+            evilScreen.style.transition = 'none';  
+            evilScreen.style.visibility = 'visible'; 
+            evilScreen.style.opacity = '1';  
 
             image.style.visibility = 'visible';
             image.style.opacity = '1';
             caption.style.visibility = 'visible';
             caption.style.opacity = '1';
 
-            whiteScreen.style.visibility = 'visible';
-            whiteScreen.style.opacity = '1';
-
             const soundEffect = document.getElementById('the funny noise');
             soundEffect.play();
 
             setTimeout(() => {
-                whiteScreen.style.transition = 'opacity 0.2s ease'; 
-                whiteScreen.style.opacity = '0'; 
+                evilScreen.style.transition = 'opacity 0.2s ease'; 
+                evilScreen.style.opacity = '0'; 
 
                 setTimeout(() => {
                     image.style.transition = 'none'; 
@@ -44,7 +45,6 @@
             align-items: center;    
             height: 100vh;           
             margin: 0;              
-            overflow: hidden;
             transition: background-color 0.2s ease; 
         }
 
@@ -95,7 +95,7 @@
             font-family: monospace;
         }
 
-        #whiteScreen {
+        #evilScreen {
             position: fixed;
             top: 0;
             left: 0;
@@ -104,12 +104,13 @@
             background-color: white;
             visibility: hidden;  
             opacity: 0;
-            transition: opacity 0.01s ease;
+            transition: opacity 0.01s ease; 
             z-index: 9999; 
+        }
     </style>
 </head>
 <body>
-    <div id="whiteScreen"></div> 
+    <div id="evilScreen"></div> 
 
     <div class="maincontainer">
         Once you press this button, something very terrifying will show up. Click if you dare.
@@ -117,7 +118,7 @@
 
         <div id="imageContainer">
             <img id="image" src="goomba 2.png" alt="goomba">
-            <p id="caption">How evil do you think I am? Have a Goomba, it's my running gag at this point. And enjoy the flash bang !!!</p>
+            <p id="caption">How evil do you think I am? Have a Goomba, it's my running gag at this point.</p>
         </div>
         <audio id="the funny noise" src="jixaw-metal-pipe-falling-sound.mp3"></audio>
     </div>
