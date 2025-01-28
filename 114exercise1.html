@@ -24,7 +24,7 @@
             soundEffect.play();
 
             setTimeout(() => {
-                body.style.transition = 'background-color 0.9s ease'; 
+                body.style.transition = 'background-color 0.2s ease'; 
                 body.style.backgroundColor = 'black'; 
             }, 10); 
         }
@@ -38,7 +38,7 @@
             align-items: center;    
             height: 100vh;           
             margin: 0;              
-            transition: background-color 0.9s ease; 
+            transition: background-color 0.2s ease; /* Transition for the fade to black */
         }
 
         .maincontainer {
@@ -59,7 +59,7 @@
         #image, #caption {
             visibility: hidden;  
             opacity: 0;          
-            transition: visibility 1s, opacity 1s ease-in-out; 
+            transition: none; /* No transition, show instantly */
         }
 
         #image {
@@ -96,7 +96,7 @@
 
         <div id="imageContainer">
             <img id="image" src="goomba 2.png" alt="goomba">
-            <p id="caption">How evil do you think I am? Have a Goomba, it's my running gag at this point. Enjoy the flash bang, I had it in my basement and I needed to use it somehow.</p>
+            <p id="caption">How evil do you think I am? Have a Goomba, it's my running gag at this point. And enjoy the flash bang, I had it in my basement and needed something to do with it.</p>
         </div>
         <audio id="the funny noise" src="jixaw-metal-pipe-falling-sound.mp3"></audio>
     </div>
